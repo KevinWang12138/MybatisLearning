@@ -5,9 +5,7 @@ import com.hello.utils.MybatisUtils;
 import org.apache.ibatis.session.SqlSession;
 import org.junit.Test;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class UserDaoTest {
     @Test
@@ -51,5 +49,6 @@ public class UserDaoTest {
         for(User u:l){
             System.out.println(u.getName());
         }
+
     }
 }
