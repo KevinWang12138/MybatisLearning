@@ -1,0 +1,55 @@
+ãDEBUGãã22-02-06ããorg.apache.ibatis.logging.LogFactoryãLogging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+ãDEBUGãã22-02-06ããorg.apache.ibatis.logging.LogFactoryãLogging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+ãDEBUGãã22-02-06ããorg.apache.ibatis.datasource.pooled.PooledDataSourceãPooledDataSource forcefully closed/removed all connections.
+ãDEBUGãã22-02-06ããorg.apache.ibatis.datasource.pooled.PooledDataSourceãPooledDataSource forcefully closed/removed all connections.
+ãDEBUGãã22-02-06ããorg.apache.ibatis.datasource.pooled.PooledDataSourceãPooledDataSource forcefully closed/removed all connections.
+ãDEBUGãã22-02-06ããorg.apache.ibatis.datasource.pooled.PooledDataSourceãPooledDataSource forcefully closed/removed all connections.
+ãDEBUGãã22-02-06ããorg.apache.ibatis.transaction.jdbc.JdbcTransactionãOpening JDBC Connection
+ãDEBUGãã22-02-06ããorg.apache.ibatis.datasource.pooled.PooledDataSourceãCreated connection 943870983.
+ãDEBUGãã22-02-06ããorg.apache.ibatis.transaction.jdbc.JdbcTransactionãSetting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@38425407]
+ãDEBUGãã22-02-06ããcom.hello.dao.UserDao.getUserByIdã==>  Preparing: select * from mybatis.user where id = ?;
+ãDEBUGãã22-02-06ããcom.hello.dao.UserDao.getUserByIdã==> Parameters: 1(Integer)
+ãDEBUGãã22-02-06ããcom.hello.dao.UserDao.getUserByIdã<==      Total: 1
+ãDEBUGãã22-02-06ããorg.apache.ibatis.logging.LogFactoryãLogging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+ãDEBUGãã22-02-06ããorg.apache.ibatis.logging.LogFactoryãLogging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+ãDEBUGãã22-02-06ããorg.apache.ibatis.datasource.pooled.PooledDataSourceãPooledDataSource forcefully closed/removed all connections.
+ãDEBUGãã22-02-06ããorg.apache.ibatis.datasource.pooled.PooledDataSourceãPooledDataSource forcefully closed/removed all connections.
+ãDEBUGãã22-02-06ããorg.apache.ibatis.datasource.pooled.PooledDataSourceãPooledDataSource forcefully closed/removed all connections.
+ãDEBUGãã22-02-06ããorg.apache.ibatis.datasource.pooled.PooledDataSourceãPooledDataSource forcefully closed/removed all connections.
+ãDEBUGãã22-02-06ããorg.apache.ibatis.transaction.jdbc.JdbcTransactionãOpening JDBC Connection
+ãDEBUGãã22-02-06ããorg.apache.ibatis.datasource.pooled.PooledDataSourceãCreated connection 943870983.
+ãDEBUGãã22-02-06ããorg.apache.ibatis.transaction.jdbc.JdbcTransactionãSetting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@38425407]
+ãDEBUGãã22-02-06ããcom.hello.dao.UserDao.getUserByIdã==>  Preparing: select * from mybatis.user where id = ?;
+ãDEBUGãã22-02-06ããcom.hello.dao.UserDao.getUserByIdã==> Parameters: 1(Integer)
+ãDEBUGãã22-02-06ããcom.hello.dao.UserDao.getUserByIdã<==      Total: 1
+ãINFOãã22-02-06ããdao.UserDaoTestãinfo:进入了testlog4j
+ãDEBUGãã22-02-06ããdao.UserDaoTestãdebug:进入了testlog4j
+ãERRORãã22-02-06ããdao.UserDaoTestãerror:进入了testlog4j
+[INFO][22-02-06][dao.UserDaoTest]info:进入了testlog4j
+[DEBUG][22-02-06][dao.UserDaoTest]debug:进入了testlog4j
+[ERROR][22-02-06][dao.UserDaoTest]error:进入了testlog4j
+[DEBUG][22-02-06][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][22-02-06][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][22-02-06][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][22-02-06][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][22-02-06][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][22-02-06][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][22-02-06][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Opening JDBC Connection
+[DEBUG][22-02-06][org.apache.ibatis.datasource.pooled.PooledDataSource]Created connection 943870983.
+[DEBUG][22-02-06][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@38425407]
+[DEBUG][22-02-06][com.hello.dao.UserDao.getUserById]==>  Preparing: select * from mybatis.user where id = ?;
+[DEBUG][22-02-06][com.hello.dao.UserDao.getUserById]==> Parameters: 1(Integer)
+[DEBUG][22-02-06][com.hello.dao.UserDao.getUserById]<==      Total: 1
+[INFO][22-02-06][dao.UserDaoTest]info:进入了test
+[DEBUG][22-02-06][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][22-02-06][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][22-02-06][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][22-02-06][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][22-02-06][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][22-02-06][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][22-02-06][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Opening JDBC Connection
+[DEBUG][22-02-06][org.apache.ibatis.datasource.pooled.PooledDataSource]Created connection 943870983.
+[DEBUG][22-02-06][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@38425407]
+[DEBUG][22-02-06][com.hello.dao.UserDao.getUserById]==>  Preparing: select * from mybatis.user where id = ?;
+[DEBUG][22-02-06][com.hello.dao.UserDao.getUserById]==> Parameters: 1(Integer)
+[DEBUG][22-02-06][com.hello.dao.UserDao.getUserById]<==      Total: 1
