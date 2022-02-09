@@ -19,10 +19,15 @@ public class UserDaoTest {
         logger.info("info:进入了test");
         SqlSession sqlSession=MybatisUtils.getSqlSession();
         UserDao mapper=sqlSession.getMapper(UserDao.class);
-        List<User> users=mapper.getUsers();
-        for(User u:users){
-            System.out.println(u);
-        }
+//        List<User> users=mapper.getUsers();
+//        for(User u:users){
+//            System.out.println(u);
+//        }
+
+//        System.out.println(mapper.getUserById(1,"123"));
+
+        mapper.addUser(new User(6,"wangqianming","123"));
+
     }
     @Test
     public void testlog4j(){
