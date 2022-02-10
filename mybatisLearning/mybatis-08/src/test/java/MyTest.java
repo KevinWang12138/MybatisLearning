@@ -5,10 +5,7 @@ import com.hello.utils.MybatisUtils;
 import org.apache.ibatis.session.SqlSession;
 import org.junit.Test;
 
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class MyTest {
     @Test
@@ -39,14 +36,18 @@ public class MyTest {
 //        blogMapper.addBook(blog);
 
         Map map=new HashMap();
-        map.put("id","38abc904bb554480aa75a78b0ba5e2a1");
+        ArrayList<String> l=new ArrayList<>();
+        l.add("1");
+        l.add("2");
+        l.add("3");
+        map.put("ids",l);
         map.put("author","Kevin");
-        blogMapper.updateBlog(map);
+//        blogMapper.updateBlog(map);
 
-//        List<Blog> l=blogMapper.queryBlogChoose(map);
-//        for(Blog b:l){
-//            System.out.println(b);
-//        }
+        List<Blog> ll=blogMapper.queryBlogForeach(map);
+        for(Blog b:ll){
+            System.out.println(b);
+        }
 
 
     }

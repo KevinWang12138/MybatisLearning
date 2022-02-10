@@ -7,15 +7,15 @@
         insert into blog (id,title,author,create_time,views)
         values (#{id},#{title},#{author},#{createTime},#{views});
     </insert>
-    <select id="queryBlogIF" parameterType="map" resultType="com.hello.pojo.Blog">
-        select * from blog where 1=1
-        <if test="title != null">
-            and title = #{title}
-        </if>
-        <if test="author != null">
-            and author = #{title}
-        </if>
-    </select>
+<!--    <select id="queryBlogIF" parameterType="map" resultType="com.hello.pojo.Blog">-->
+<!--        select * from blog where 1=1-->
+<!--        <if test="title != null">-->
+<!--            and title = #{title}-->
+<!--        </if>-->
+<!--        <if test="author != null">-->
+<!--            and author = #{title}-->
+<!--        </if>-->
+<!--    </select>-->
     <select id="queryBlogWhere" parameterType="map" resultType="com.hello.pojo.Blog">
         select * from blog
         <where>
@@ -52,9 +52,33 @@
                 title = #{title},
             </if>
             <if test="author != null">
-                author = #{author}
+                author = #{author},
             </if>
         </set>
         where id = #{id};
     </update>
+
+    <sql id="if-title-author">
+        <if test="title != null">
+            title = #{title}
+        </if>
+        <if test="author != null">
+            and author = #{author}
+        </if>
+    </sql>
+    <select id="queryBlogIF" parameterType="map" resultType="com.hello.pojo.Blog">
+        select * from blog
+        <where>
+            <include refid="if-title-author"></include>
+        </where>
+    </select>
+
+    <select id="queryBlogForeach" parameterType="map" resultType="com.hello.pojo.Blog">
+        select * from blog
+        <where>
+            <foreach collection="ids" item="id" open="and (" close=")" separator="or">
+                id = #{id}
+            </foreach>
+        </where>
+    </select>
 </mapper>
